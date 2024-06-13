@@ -61,7 +61,7 @@ export const coffees: cardData[] = [
     imagePosition: "-280px -450px",
   },
 ]
-export const secondary = [
+export const secondaries = [
   { name: "糖",
     description: "",
   },

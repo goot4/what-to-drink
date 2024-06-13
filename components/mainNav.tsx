@@ -2,14 +2,18 @@
 import Link from "next/link"
 import {usePathname} from "next/navigation"
 import clsx from "clsx";
+import {useTranslations} from "next-intl";
 
-const paths = [
-  {name: "制作", path: "/", activeCond: ''},
-  {name: "食谱", path: "/recipe/coffee", activeCond: "recipe"},
-]
+
 
 export default function MainNav(){
+  const t = useTranslations()
+
   const pathname = usePathname()
+  const paths = [
+    {name: t("index.brew"), path: "/", activeCond: ''},
+    {name: t("index.recipe"), path: "/recipe/coffee", activeCond: "recipe"},
+  ]
   const conditions = Array(paths.length).fill(false)
   paths.forEach((path, index) => {
     if(index===0) {
@@ -24,7 +28,7 @@ export default function MainNav(){
 
   return (
     <div className={"text-center"}>
-      <h1 className={"text-3xl mt-4 mb-2"}>今天喝什么?</h1>
+      <h1 className={"text-3xl mt-4 mb-2"}>{t("Title")}</h1>
       <div role="tablist" className="tabs tabs-bordered">
         {paths.map((path, index) => (
           <Link key={index} href={path.path} role="tab"

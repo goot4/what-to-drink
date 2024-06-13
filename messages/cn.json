@@ -1,0 +1,35 @@
+{
+  "Title": "今天喝什么?",
+  "index": {
+    "brew": "制作",
+    "recipe": "食谱"
+  },
+  "recipeIndex": {
+    "ingredients": "素材",
+    "coffee": "咖啡",
+    "secondary": "配料"
+  },
+  "ingredients": [
+    { "name": "特浓咖啡",
+      "description": "作为制作各种咖啡的标准单位, 一份浓缩咖啡只有30克液体, 但要加6-8克细磨咖啡粉"
+    },
+    { "name": "牛奶",
+      "description": "包括热牛奶和奶泡, 奶泡是添加了空气的牛奶. 这种充气过程会产生气泡或泡沫，并有助于牛奶达到奶油般的稠度."
+    },
+    { "name": "水",
+      "description": ""
+    },
+    { "name": "巧克力",
+      "description": ""
+    },
+    { "name": "奶油",
+      "description": ""
+    }
+  ],
+  "coffees": [
+
+  ],
+  "secondaries": [
+
+  ]
+}

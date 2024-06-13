@@ -2,15 +2,16 @@
 import Link from "next/link"
 import {usePathname} from "next/navigation"
 import clsx from "clsx";
-
-const paths = [
-  {name: "素材", path: "/recipe/base"},
-  {name: "咖啡", path: "/recipe/coffee"},
-  {name: "配料", path: "/recipe/secondary"},
-]
+import {useTranslations} from "next-intl";
 
 export default function RecipeNav(){
+  const t = useTranslations("recipeIndex")
   const pathname = usePathname()
+  const paths = [
+    {name: t("ingredients"), path: "/recipe/base"},
+    {name: t("coffee"), path: "/recipe/coffee"},
+    {name: t("secondary"), path: "/recipe/secondary"},
+  ]
 
   return (
     <div className={"text-center my-2"}>
