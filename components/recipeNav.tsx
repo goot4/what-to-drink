@@ -4,13 +4,16 @@ import {usePathname} from "next/navigation"
 import clsx from "clsx";
 import {useTranslations} from "next-intl";
 
-export default function RecipeNav(){
+type Props={
+  locale: string
+}
+export default function RecipeNav({locale}:Props){
   const t = useTranslations("recipeIndex")
   const pathname = usePathname()
   const paths = [
-    {name: t("ingredients"), path: "/recipe/base"},
-    {name: t("coffee"), path: "/recipe/coffee"},
-    {name: t("secondary"), path: "/recipe/secondary"},
+    {name: t("ingredients"), path: `/${locale}/recipe/base`},
+    {name: t("coffee"), path: `/${locale}/recipe/coffee`},
+    {name: t("secondary"), path: `/${locale}/recipe/secondary`},
   ]
 
   return (
