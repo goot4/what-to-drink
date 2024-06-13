@@ -15,6 +15,11 @@ const config: Config = {
       },
     },
   },
+  daisyui: {
+    themes: [
+      "coffee",
+    ],
+  },
   plugins: [
     require('daisyui'),
   ],
