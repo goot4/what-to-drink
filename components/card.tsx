@@ -1,7 +1,7 @@
-import {cardData} from "@/app/api/recipeData"
+import {CardData} from "@/app/api/recipeData"
 
 type Pros={
-  data: cardData
+  data: CardData
 }
 // bg-[#3E230E]
 export default function Card({data}:Pros){
@@ -18,7 +18,7 @@ export default function Card({data}:Pros){
         }}></div>}
         <div className={"grow p-2"}>
           <h2 className={"text-lg font-bold text-center"}>{data.name}</h2>
-          {data.base && <p>素材: {data.base}</p>}
+          {data.base && <p>{data.base}</p>}
         </div>
       </div>
       <p className={"mt-4"}>{data.description}</p>

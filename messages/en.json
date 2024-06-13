@@ -1,35 +1,103 @@
 {
   "index": {
     "Title": "What to Drink Today?",
-    "brew": "brew",
-    "recipe": "recipe"
+    "brew": "Brew",
+    "recipe": "Recipe"
   },
   "recipeIndex": {
-    "ingredients": "ingredients",
-    "coffee": "coffee",
-    "secondary": "secondary"
+    "ingredients": "Ingredients",
+    "coffee": "Coffee",
+    "secondary": "Secondary"
   },
-  "ingredients": [
-    { "name": "特浓咖啡",
-      "description": "作为制作各种咖啡的标准单位, 一份浓缩咖啡只有30克液体, 但要加6-8克细磨咖啡粉"
+
+  "recipe": {
+    "ingredients":
+    {
+      "espresso": {
+        "name": "Espresso",
+        "description": "As the standard unit for making various types of coffee, a shot of espresso contains only 30 grams of liquid but requires 6-8 grams of finely ground coffee."
+      },
+      "milk":{
+        "name": "Milk",
+        "description": "Including hot milk and milk foam, milk foam is milk with added air. This aeration process creates bubbles or foam and helps the milk achieve a creamy consistency."
+      },
+      "water":{
+        "name": "Water",
+        "description": ""
+      },
+      "chocolate":{"name": "Chocolate",
+        "description": ""
+      },
+      "cream":{
+        "name": "Cream",
+        "description": ""
+      }
     },
-    { "name": "牛奶",
-      "description": "包括热牛奶和奶泡, 奶泡是添加了空气的牛奶. 这种充气过程会产生气泡或泡沫，并有助于牛奶达到奶油般的稠度."
+    "coffees": {
+      "espresso": {
+        "name": "Espresso",
+        "description":"The simplest Italian coffee, with a rich and intense flavor.",
+        "base": "Base: An espresso shot",
+        "image": "/Coffee-Types-Comparison-Chart.jpg",
+        "imagePosition": "-50px -150px"
+      },
+      "latte": {
+        "name": "Latte",
+        "description": "The mild flavor of milk adds a smooth and sweet touch to the naturally bitter coffee.",
+        "base": "Base: One-third espresso, two-thirds steamed milk, and froth",
+        "image": "/Coffee-Types-Comparison-Chart.jpg",
+        "imagePosition": "-500px -340px"
+      },
+      "cappuccino": {
+        "name": "Cappuccino",
+        "description": "Cappuccino and latte are fundamentally similar. The difference lies in cappuccino having more froth compared to milk, while latte is the opposite. The intense flavor of espresso in cappuccino, complemented by creamy froth, gives it a refined and elegant character.",
+        "base": "Base: One-third espresso, one-third steamed milk, and one-third froth",
+        "image": "/Coffee-Types-Comparison-Chart.jpg",
+        "imagePosition": "-50px -340px"
+      },
+      "americano": {
+        "name": "Americano",
+        "description": "Americano coffee originated during wartime in Europe, when American soldiers diluted the commonly served small shots of espresso with hot water. Due to Americans' typically more casual and straightforward approach to coffee preparation, this method quickly became popular worldwide with the spread of American coffee chains.",
+        "base": "Base: One or two shots of espresso topped up with hot water",
+        "image": "/Coffee-Types-Comparison-Chart.jpg",
+        "imagePosition": "-280px -340px"
+      },
+      "macchiato":{
+        "name": "Macchiato",
+        "description": "\"Macchiato\" means \"marked\" or \"stained\" in Italian. Therefore, a literal translation of \"macchiato coffee\" would be espresso \"marked\" with milk, typically a small amount of milk or foam added to espresso.",
+        "base": "Base: A small amount of froth and one shot of espresso",
+        "image": "/Coffee-Types-Comparison-Chart.jpg",
+        "imagePosition": "-50px -250px"
+      },
+      "mocha": {
+        "name": "Mocha",
+        "description": "Mocha coffee is a sweet coffee beverage and one of the oldest types of coffee, dating back to the origins of coffee itself. It is named after the famous port of Mocha.",
+        "base": "Base: Espresso, milk, chocolate, and whipped cream mixed together",
+        "image": "/Coffee-Types-Comparison-Chart.jpg",
+        "imagePosition": "-280px -450px"
+      }
     },
-    { "name": "水",
-      "description": ""
-    },
-    { "name": "巧克力",
-      "description": ""
-    },
-    { "name": "奶油",
-      "description": ""
+    "secondaries": {
+      "sugar": {
+        "name": "Sugar",
+        "description": ""
+      },
+      "cinnamon": {
+        "name": "Cinnamon",
+        "description": "Cinnamon can give you a wonderfully warm flavor. Additionally, it can help control blood sugar and improve cholesterol levels."
+      },
+      "ginger": {
+        "name": "Ginger",
+        "description": "Add the unique spicy flavor of ginger. Ginger has a long history as a medicinal plant, addressing ailments from colds to cancer. Modern research focuses on its antioxidant, anti-inflammatory, and anti-cancer properties."
+      },
+      "lemon": {
+        "name": "Lemon",
+        "description": "It can eliminate bitterness and enhance the flavor of coffee. Lemons and limes are rich in vitamins and antioxidants, so adding them to coffee can help fight cancer and boost the immune system."
+      },
+      "honey": {
+        "name": "Honey",
+        "description": "A great choice for those who like sweet coffee, it provides more nutrition than refined sugar, including antioxidants, minerals, and vitamins, and can also soothe the throat."
+      }
     }
-  ],
-  "coffees": [
-
-  ],
-  "secondaries": [
-
-  ]
+  }
 }
